@@ -1,0 +1,22 @@
+﻿using ListSample.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace ListSample.Views
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class GroupedPlacesPage : ContentPage
+    {
+        public GroupedPlacesPage()
+        {
+            InitializeComponent();
+            BindingContext = new PlacesViewModel();
+        }
+    }
+}
